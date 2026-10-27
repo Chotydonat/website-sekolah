@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dayah Jeumala Amal — Profil Sekolah & PPDB Online</title>
+  <meta name="description" content="Website resmi profil sekolah dan Penerimaan Peserta Didik Baru (PPDB) online: profil, prestasi, fasilitas, berita, biaya, dan pendaftaran.">
+  <meta name="theme-color" content="#0B2A5B">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Profil Sekolah & PPDB Online">
+  <meta property="og:description" content="Daftar online, unggah berkas, dan pantau status pendaftaran dengan token.">
+  <meta property="og:image" content="assets/icon-512.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://script.google.com">
+  <link rel="stylesheet" href="css/base.css?v=1.0.0">
+  <link rel="stylesheet" href="css/public.css?v=1.0.0">
+  <script>
+    /* terapkan tema sebelum render (cegah kedip) */
+    (function () { try { var t = localStorage.getItem('ppdb_theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
+  </script>
+</head>
+<body>
+  <a href="#app" class="skip">Lewati ke konten utama</a>
+
+  <div class="topinfo" id="topinfo" aria-label="Informasi kontak">
+    <div class="wrap"><div class="left"></div><div class="soc"></div></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="#/" aria-label="Beranda">
+        <img src="assets/logo-emblem.png" alt="" width="44" height="44" id="brandLogo">
+        <span class="bt"><span class="bn" id="brandName">Memuat…</span><span class="bs" id="brandSub">Profil Sekolah &amp; PPDB Online</span></span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Navigasi utama">
+        <a href="#/" data-nav="beranda">Beranda</a>
+        <a href="#profil" data-nav="profil">Profil</a>
+        <a href="#prestasi" data-nav="prestasi">Prestasi</a>
+        <a href="#fasilitas" data-nav="fasilitas">Fasilitas</a>
+        <a href="#/berita" data-nav="berita">Berita</a>
+        <a href="#kegiatan" data-nav="kegiatan">Kegiatan</a>
+        <a href="#biaya" data-nav="biaya">Biaya</a>
+        <a href="#kontak" data-nav="kontak">Kontak</a>
+      </nav>
+      <div class="nav-act">
+        <a class="btn btn-outline btn-sm hide-m" id="navWa" href="#" target="_blank" rel="noopener"></a>
+        <button class="btn btn-ghost btn-icon btn-sm" data-theme-toggle type="button" aria-label="Ganti mode"></button>
+        <a class="btn btn-accent btn-sm hide-m" href="#/daftar" id="navDaftar">Daftar</a>
+        <button class="btn btn-ghost btn-icon btn-sm burger" id="burger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mdrawer"></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mdrawer" id="mdrawer" aria-hidden="true">
+    <div class="bd" data-close-drawer></div>
+    <div class="pn" role="dialog" aria-label="Menu">
+      <div class="pn-h"><b>Menu</b><button class="btn btn-ghost btn-icon btn-sm" data-close-drawer aria-label="Tutup menu"></button></div>
+      <nav id="mmenu"></nav>
+      <div class="row-t"><span>Mode Gelap</span><label class="switch"><input type="checkbox" data-theme-switch aria-label="Mode gelap"><span class="track"></span></label></div>
+      <div class="pn-f">
+        <a class="btn btn-light btn-block" id="mWa" href="#" target="_blank" rel="noopener"></a>
+        <a class="btn btn-accent btn-block" href="#/daftar" data-close-drawer>Daftar PPDB Sekarang</a>
+        <a class="btn btn-ghost btn-block" href="#/status" data-close-drawer>Cek Status Pendaftaran</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="foot" id="footer"></footer>
+  <a class="wa-float hidden" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat WhatsApp"></a>
+  <button class="btn btn-light btn-icon to-top" id="toTop" type="button" aria-label="Kembali ke atas"></button>
+
+  <script src="js/config.js?v=1.0.0"></script>
+  <script src="js/core.js?v=1.0.0"></script>
+  <script src="js/public.js?v=1.0.0"></script>
+</body>
+</html>
