@@ -334,3 +334,10 @@
 body[data-page="daftar"] .wa-float, body[data-page="daftar"] .to-top { display: none; }
 .stp .t { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 @media (min-width: 721px) { .stp { flex: 1 1 0; } }
+
+/* Gambar tidak dipotong: sampul artikel/profil tampil utuh dengan rasio aslinya */
+.art-cover { aspect-ratio: auto; min-height: 160px; background: var(--surface-2); }
+.art-cover img { width: 100%; height: auto; max-height: 620px; object-fit: contain; display: block; }
+/* Gambar profil di beranda: bingkai tetap, isi gambar utuh (tanpa crop) */
+.about-vis .thumb { background: var(--surface-2); }
+.about-vis .thumb > img { object-fit: contain; }
